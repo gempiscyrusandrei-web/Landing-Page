@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Neuralift Systems</title>
+  <meta name="description" content="Book a demo or send a business inquiry to Neuralift Systems for premium AI automation services.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="nav"><div class="nav-inner"><a class="brand" href="index.html"><span class="brand-mark">N</span><span>Neuralift Systems</span></a><nav class="nav-links"><a href="index.html">Home</a><a href="services.html">Services</a><a href="pricing.html">Pricing</a><a class="active" href="contact.html">Contact</a><a href="waitlist.html">Waitlist</a></nav><div class="nav-actions"><a class="btn btn-secondary" href="contact.html">Book Demo</a><button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button></div></div></header>
+  <main>
+    <section class="page-hero container"><div class="eyebrow">Contact</div><h1>Tell us where your team is losing time.</h1><p class="lead">Send a business inquiry and we will reply with the clearest automation opportunities for your workflow.</p></section>
+    <section class="section">
+      <div class="container contact-grid">
+        <aside class="glass-card" data-aos="fade-up">
+          <h2>Business inquiries</h2>
+          <p>Use the form for demo requests, partnership questions, AI workflow audits, and enterprise automation discussions.</p>
+          <ul class="feature-list"><li>Response goal under 1 business day</li><li>Private workflow review</li><li>Clear launch scope and pricing</li></ul>
+          <p class="form-note">Email is protected through the form provider to prevent direct scraping.</p>
+        </aside>
+        <form class="form-card" name="contact" method="POST" action="/" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="website" data-lead-form="contact" data-async="true">
+          <input type="hidden" name="form-name" value="contact">
+          <p class="hidden-field"><label>Website <input name="website" autocomplete="off"></label></p>
+          <div class="form-grid">
+            <div class="field"><label for="name">Name</label><input id="name" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="email">Work email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+            <div class="field"><label for="company">Company</label><input id="company" name="company" autocomplete="organization" required></div>
+            <div class="field"><label for="budget">Project range</label><select id="budget" name="project_range" required><option value="">Select range</option><option>$1.5k - $5k</option><option>$5k - $15k</option><option>$15k+</option></select></div>
+            <div class="field full"><label for="message">What should AI automate?</label><textarea id="message" name="message" required></textarea></div>
+            <div class="field full"><label><input type="checkbox" name="privacy" required> I agree to be contacted about this inquiry.</label></div>
+            <div class="field full recaptcha-slot" data-netlify-recaptcha="true"></div>
+            <div class="field full"><button class="btn btn-primary" type="submit">Send Inquiry</button><p class="form-status" data-form-status></p></div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="section section-muted">
+      <div class="container">
+        <h2 class="section-title">FAQ</h2>
+        <div class="faq-stack">
+          <details class="faq-item"><summary>How fast can an automation launch?</summary><p>Starter workflows can launch in one to two weeks after assets, access, and workflow rules are confirmed.</p></details>
+          <details class="faq-item"><summary>Can you integrate with our current CRM?</summary><p>Yes. We commonly connect HubSpot, Salesforce, Pipedrive, Airtable, Notion, Google Sheets, Slack, and custom APIs.</p></details>
+          <details class="faq-item"><summary>Do we need to expose API keys in the website?</summary><p>No. Secrets belong in your provider dashboard, serverless functions, or environment variables. They should never be committed to frontend code.</p></details>
+          <details class="faq-item"><summary>Can we approve AI replies before they send?</summary><p>Yes. Human-in-the-loop approval can be included for sales, support, or sensitive workflows.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container footer-grid"><div><a class="brand" href="index.html"><span class="brand-mark">N</span><span>Neuralift Systems</span></a><p>Autonomous workflows. Human-level polish.</p></div><div><strong>Company</strong><a href="services.html">Services</a><a href="pricing.html">Pricing</a><a href="contact.html">Contact</a></div><div><strong>Social</strong><a href="https://www.linkedin.com/" rel="noopener">LinkedIn</a><a href="https://twitter.com/" rel="noopener">X / Twitter</a></div><div><strong>Start</strong><a href="contact.html">Book Demo</a><a href="waitlist.html">Join Waitlist</a></div></div></footer>
+  <a class="floating-chat" href="https://wa.me/15551234567" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" fill="none"><path d="M5 19.5 6.1 16A7.5 7.5 0 1 1 9 18.1L5 19.5Z" stroke="currentColor" stroke-width="2"/><path d="M8.8 10.2c.4 2.1 2.1 3.8 4.2 4.2l1.2-1.2c.2-.2.5-.3.8-.2.7.2 1.4.3 2 .3.4 0 .7.3.7.7v1.9c0 .4-.3.7-.7.7A9.7 9.7 0 0 1 7 6.9c0-.4.3-.7.7-.7h1.9c.4 0 .7.3.7.7 0 .7.1 1.4.3 2 .1.3 0 .6-.2.8l-1.6 1.5Z" fill="currentColor"/></svg></a>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><script src="js/main.js"></script>
+</body>
+</html>
