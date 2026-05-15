@@ -23,9 +23,10 @@
           <ul class="feature-list"><li>Response goal under 1 business day</li><li>Private workflow review</li><li>Clear launch scope and pricing</li></ul>
           <p class="form-note">Email is protected through the form provider to prevent direct scraping.</p>
         </aside>
-        <form class="form-card" name="contact" method="POST" action="/" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="website" data-lead-form="contact" data-async="true">
-          <input type="hidden" name="form-name" value="contact">
-          <p class="hidden-field"><label>Website <input name="website" autocomplete="off"></label></p>
+        <form class="form-card" name="contact" method="POST" action="https://formspree.io/f/xykoqbdg" data-lead-form="contact" data-async="true">
+          <input type="hidden" name="_subject" value="New Neuralift Systems business inquiry">
+          <input type="hidden" name="lead_source" value="Contact page">
+          <p class="hidden-field"><label>Website <input name="_gotcha" autocomplete="off"></label></p>
           <div class="form-grid">
             <div class="field"><label for="name">Name</label><input id="name" name="name" autocomplete="name" required></div>
             <div class="field"><label for="email">Work email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
@@ -33,7 +34,6 @@
             <div class="field"><label for="budget">Project range</label><select id="budget" name="project_range" required><option value="">Select range</option><option>$1.5k - $5k</option><option>$5k - $15k</option><option>$15k+</option></select></div>
             <div class="field full"><label for="message">What should AI automate?</label><textarea id="message" name="message" required></textarea></div>
             <div class="field full"><label><input type="checkbox" name="privacy" required> I agree to be contacted about this inquiry.</label></div>
-            <div class="field full recaptcha-slot" data-netlify-recaptcha="true"></div>
             <div class="field full"><button class="btn btn-primary" type="submit">Send Inquiry</button><p class="form-status" data-form-status></p></div>
           </div>
         </form>
