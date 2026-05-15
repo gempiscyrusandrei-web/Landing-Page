@@ -20,18 +20,18 @@
           <div class="eyebrow">Lead capture</div>
           <h1>Join the next Neuralift automation sprint.</h1>
           <p class="lead">Share your details and we will send a confirmation, then review whether your business is a fit for the next build window.</p>
-          <div class="thank-you" data-thank-you="waitlist">Thank you for joining the waitlist. Your request has been captured, and a professional confirmation email can be sent automatically after Formspree, EmailJS, or Netlify email notifications are configured.</div>
+          <div class="thank-you" data-thank-you="waitlist">Thank you for joining the waitlist. Your request has been captured, and a professional confirmation email can be sent automatically after the Formspree autoresponder is enabled.</div>
         </div>
-        <form class="form-card" name="waitlist" method="POST" action="/" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="website" data-lead-form="waitlist" data-async="true">
-          <input type="hidden" name="form-name" value="waitlist">
-          <p class="hidden-field"><label>Website <input name="website" autocomplete="off"></label></p>
+        <form class="form-card" name="waitlist" method="POST" action="https://formspree.io/f/xykoqbdg" data-lead-form="waitlist" data-async="true">
+          <input type="hidden" name="_subject" value="New Neuralift Systems waitlist lead">
+          <input type="hidden" name="lead_source" value="Waitlist page">
+          <p class="hidden-field"><label>Website <input name="_gotcha" autocomplete="off"></label></p>
           <div class="form-grid">
             <div class="field full"><label for="wait-name">Name</label><input id="wait-name" name="name" autocomplete="name" required></div>
             <div class="field full"><label for="wait-email">Email</label><input id="wait-email" name="email" type="email" autocomplete="email" required></div>
             <div class="field full"><label for="business-type">Business type</label><select id="business-type" name="business_type" required><option value="">Select business type</option><option>SaaS</option><option>Agency</option><option>E-commerce</option><option>Professional services</option><option>Local service business</option><option>Enterprise team</option></select></div>
             <div class="field full"><label for="automation-goal">Primary automation goal</label><textarea id="automation-goal" name="automation_goal" placeholder="Customer support, sales replies, lead capture, follow-ups, CRM workflows..." required></textarea></div>
             <div class="field full"><label><input type="checkbox" name="consent" required> Send me a confirmation and automation updates.</label></div>
-            <div class="field full recaptcha-slot" data-netlify-recaptcha="true"></div>
             <div class="field full"><button class="btn btn-primary" type="submit">Join Waitlist</button><p class="form-status" data-form-status></p></div>
           </div>
         </form>
