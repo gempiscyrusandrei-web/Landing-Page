@@ -784,12 +784,6 @@ textarea:focus {
   line-height: 1.55;
 }
 
-.recaptcha-slot {
-  min-height: 78px;
-  display: flex;
-  align-items: center;
-}
-
 .form-status.success {
   color: var(--mint);
 }
