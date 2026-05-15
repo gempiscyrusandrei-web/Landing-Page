@@ -12,22 +12,21 @@ Premium static multi-page AI automation agency website built with HTML, CSS, Jav
 
 ## Lead Automation Setup
 
-The forms are ready for Netlify Forms by default. Deploy to Netlify, open **Site configuration > Forms**, and Netlify will collect submissions for `contact` and `waitlist`.
+The forms use the best match for this static website: **Formspree with Vanilla JS/Ajax**.
+
+Both `contact.html` and `waitlist.html` submit to:
+
+```text
+https://formspree.io/f/xykoqbdg
+```
 
 To send submissions to `cyrusandreihgempis@gmail.com`:
 
-1. In Netlify, go to **Forms > Form notifications**.
-2. Add an email notification for both `contact` and `waitlist`.
-3. Set recipient to `cyrusandreihgempis@gmail.com`.
-4. Enable spam filtering. The forms already include `data-netlify-recaptcha="true"` and reCAPTCHA slots for Netlify.
-
-### Formspree Alternative
-
-1. Create a Formspree form at `https://formspree.io`.
-2. Set the recipient email to `cyrusandreihgempis@gmail.com`.
-3. Replace each form `action="/"` with your Formspree endpoint, such as `https://formspree.io/f/YOUR_FORM_ID`.
-4. Add `data-async="true"` to the form if you want the JavaScript success state without a page reload.
-5. Configure Formspree's autoresponder using the template below.
+1. Open the Formspree dashboard for form `xykoqbdg`.
+2. Confirm the recipient email is `cyrusandreihgempis@gmail.com`.
+3. Enable spam protection, CAPTCHA, and domain allowlisting.
+4. Enable an autoresponder using the thank-you template below.
+5. Test both forms after deployment from the live domain.
 
 ### EmailJS Alternative
 
@@ -59,7 +58,7 @@ Neuralift Systems
 - Enforce HTTPS through Netlify, GitHub Pages with a custom domain, or Cloudflare.
 - Keep `netlify.toml` security headers enabled and update the domain in redirects before launch.
 - Add reCAPTCHA or Turnstile to all public forms.
-- Use honeypot fields, currently included as `website`.
+- Use honeypot fields, currently included as `_gotcha`.
 - Validate and sanitize inputs on the frontend and again in the form provider or serverless function.
 - Never place private API keys, SMTP passwords, or CRM tokens in frontend JavaScript.
 - Use environment variables for serverless functions and provider dashboards.
@@ -67,7 +66,7 @@ Neuralift Systems
 - Use Cloudflare bot protection, WAF rules, and email address obfuscation to reduce scraping and spam.
 - Keep Content Security Policy restrictive. Add domains only when integrations require them.
 - Review form submissions before connecting automations that write to CRM or send outbound emails.
-- For GitHub Pages, use a third-party form provider with spam filtering because Pages cannot process server-side forms.
+- For GitHub Pages, Formspree handles the server-side form processing and spam filtering.
 
 ## GitHub Pages Deployment
 
@@ -75,15 +74,14 @@ Neuralift Systems
 2. In GitHub, open **Settings > Pages**.
 3. Choose the main branch and root folder.
 4. Add a custom domain if needed and enforce HTTPS.
-5. Use Formspree or EmailJS for forms because GitHub Pages is static.
+5. Keep the Formspree endpoint in the form `action` attributes because GitHub Pages is static.
 
 ## Netlify Deployment
 
 1. Drag the folder into Netlify Drop or connect the GitHub repository.
 2. Keep the publish directory as the repository root.
-3. Confirm Netlify detects the `contact` and `waitlist` forms after first deploy.
-4. Add form notifications to send leads to `cyrusandreihgempis@gmail.com`.
-5. Enable HTTPS, deploy previews, spam filtering, and security headers.
+3. Keep Formspree as the form backend, or intentionally switch back to Netlify Forms.
+4. Enable HTTPS, deploy previews, and security headers.
 
 ## Local Preview
 
