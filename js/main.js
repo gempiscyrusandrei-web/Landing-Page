@@ -65,7 +65,7 @@ document.querySelectorAll("form[data-lead-form]").forEach((form) => {
       email.setAttribute("aria-invalid", "true");
     }
 
-    const honeypot = form.querySelector('input[name="website"]');
+    const honeypot = form.querySelector('input[name="website"], input[name="_gotcha"]');
     if (honeypot && honeypot.value) {
       event.preventDefault();
       return;
