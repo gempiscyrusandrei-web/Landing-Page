@@ -530,7 +530,7 @@ h1 {
   z-index: 2;
 }
 
-.video-frame iframe {
+.video-frame video {
   position: relative;
   z-index: 1;
   width: 100%;
@@ -538,6 +538,8 @@ h1 {
   min-height: 330px;
   border: 0;
   border-radius: 12px;
+  object-fit: cover;
+  background: #050812;
 }
 
 .play-button {
