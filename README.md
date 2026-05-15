@@ -10,6 +10,11 @@ Premium static multi-page AI automation agency website built with HTML, CSS, Jav
 - `contact.html` - business inquiry form, FAQ, floating WhatsApp button
 - `waitlist.html` - lead capture waitlist form with thank-you state
 
+## Contact Details
+
+- Phone / WhatsApp: `+63 969 057 4612`
+- WhatsApp link: `https://wa.me/639690574612`
+
 ## Lead Automation Setup
 
 The forms use the best match for this static website: **Formspree with Vanilla JS/Ajax**.
